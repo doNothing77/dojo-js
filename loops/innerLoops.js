@@ -18,4 +18,22 @@ function innerLoops(){
     return null
 }
 
-innerLoops()
+var vectorArray = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+];
+
+function cleancode() {
+    for (let row of vectorArray) {
+        for (let value of row) {
+            if (value > 0) {
+                console.log(vectorArray);
+                return;
+            }
+        }
+    }
+}
+
+innerLoops();
+cleancode()
